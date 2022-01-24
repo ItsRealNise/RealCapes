@@ -1,0 +1,8 @@
+name: RealCapes
+author: ItsRealNise
+version: 1.0.0
+description: Capes plugins for PocketMine-MP
+main: ItsRealNise\RealCapes\Main
+api: 4.0.0
+extensions: [gd]
+softdepend: FormAPI
