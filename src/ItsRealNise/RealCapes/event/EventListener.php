@@ -21,7 +21,7 @@ class EventListener implements Listener{
         $this->plugin->skin[$player->getName()] = $player->getSkin();
         if(file_exists($this->plugin->getDataFolder() . $this->plugin->data->get($player->getName()) . ".png")){
             $oldSkin = $player->getSkin();
-            $capeData = $this->plugin->createCapes($this->data->get($player->getName()));
+            $capeData = $this->plugin->createCapes($this->plugin->data->get($player->getName()));
             $setCape = new Skin($oldSkin->getSkinId(), $oldSkin->getSkinData(), $capeData, $oldSkin->getGeometryName(), $oldSkin->getGeometryData());
             $player->setSkin($setCape);
             $player->sendSkin();
