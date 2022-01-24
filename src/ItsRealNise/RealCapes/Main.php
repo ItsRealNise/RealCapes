@@ -7,13 +7,11 @@ use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 
-use jojoe77777\FormAPI\FormAPI;
 use ItsRealNise\RealCapes\event\EventListener;
 use ItsRealNise\RealCapes\command\RealCapesCommand;
 
 class Main extends PluginBase {
     
-    /** @var FormAPI $form */
     public $form;
 
     /** @var Config $config */
