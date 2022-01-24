@@ -2,6 +2,7 @@
 
 namespace ItsRealNise\RealCapes\event;
 
+use pocketmine\entity\Skin;
 use pocketmine\event\Listener;
 use pocketmine\event\player\{PlayerChangeSkinEvent, PlayerJoinEvent};
 
