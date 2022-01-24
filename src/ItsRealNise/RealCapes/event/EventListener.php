@@ -34,6 +34,6 @@ class EventListener implements Listener{
     
     public function onChangeSkin(PlayerChangeSkinEvent $event){
         $player = $event->getPlayer();
-        $this->skin[$player->getName()] = $player->getSkin();
+        $this->plugin->skin[$player->getName()] = $player->getSkin();
     }
 }
