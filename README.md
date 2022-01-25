@@ -13,3 +13,9 @@ With The Command /capes
 • Wings Support
 
 You can add your custom cape with 64x32 Pixel (.png file)
+
+
+# CREDITS FOR
+https://github.com/SuperStulle007/UltraCapes
+or
+SuperStulle007
