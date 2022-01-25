@@ -26,11 +26,6 @@ class Main extends PluginBase {
     
     public function onEnable() : void{
         $this->saveDefaultConfig();
-        $this->form = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-        if($this->form == null) {
-            $this->getServer()->getLogger()->alert("Can't find FormAPI please download first");
-            $this->getServer()->shutdown();
-        }
         $this->config = new Config($this->getDataFolder() . "config.yml", Config::YAML);
         $this->data = new Config($this->getDataFolder() . "data.yml", Config::YAML);
         $this->getServer()->getCommandMap()->register("RealCapes", new RealCapesCommand("capes", $this));
