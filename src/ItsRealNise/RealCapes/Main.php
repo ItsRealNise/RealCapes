@@ -7,6 +7,7 @@ use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 
+use jojoe77777\FormAPI\SimpleForm;
 use ItsRealNise\RealCapes\event\EventListener;
 use ItsRealNise\RealCapes\command\RealCapesCommand;
 
@@ -63,8 +64,8 @@ class Main extends PluginBase {
     }
     
     public function openCapesUI($player) {
-        $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-        $form = $api->createSimpleForm(function(Player $player, int $data = null) {
+        //$api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
+        $form = new SimpleForm(function(Player $player, int $data = null) {
             if ($data === null) {
                 return true;
             }
@@ -92,8 +93,8 @@ class Main extends PluginBase {
             }
                         
     public function openCapeListUI($player){
-        $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-        $form = $api->createSimpleForm(function(Player $player, $data = null) {
+        //$api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
+        $form = new SimpleForm(function(Player $player, $data = null) {
             $result = $data;
             if ($result === null) {
                 return true;
