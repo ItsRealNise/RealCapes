@@ -2,16 +2,15 @@
 
 namespace ItsRealNise\RealCapes\event;
 
-use pocketmine\entity\Skin;
 use pocketmine\event\Listener;
+use pocketmine\entity\Skin;
 use pocketmine\event\player\{PlayerChangeSkinEvent, PlayerJoinEvent};
 
 use ItsRealNise\RealCapes\Main;
 
 class EventListener implements Listener{
     
-    /** @var Main $plugin */
-    public $plugin;
+    public Main $plugin;
     
     public function __construct(Main $plugin){
         $this->plugin = $plugin;
@@ -34,6 +33,6 @@ class EventListener implements Listener{
     
     public function onChangeSkin(PlayerChangeSkinEvent $event){
         $player = $event->getPlayer();
-        $this->plugin->skin[$player->getName()] = $player->getSkin();
+        $this->skin[$player->getName()] = $player->getSkin();
     }
 }
