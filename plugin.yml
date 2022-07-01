@@ -5,4 +5,3 @@ description: Capes plugins for PocketMine-MP
 main: ItsRealNise\RealCapes\Main
 api: 4.0.0
 extensions: [gd]
-depend: FormAPI
